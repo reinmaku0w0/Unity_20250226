@@ -1,5 +1,5 @@
 
-public class TimeConverter
+public class CsharpPractice
 {
   public int Add(int a, int b)
   {
