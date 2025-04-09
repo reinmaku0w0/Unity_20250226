@@ -74,9 +74,11 @@ public class CharacterTests : MonoBehaviour
         var enemy1 = new GameObject().AddComponent<Enemy>();
         var enemy1Collider = enemy1.gameObject.AddComponent<BoxCollider2D>();
         enemy1.SetHp(hpValue : 100);
+        
         var enemy2 = new GameObject().AddComponent<Enemy>();
         var enemy2Collider = enemy2.gameObject.AddComponent<BoxCollider2D>();
-        enemy1.SetHp(hpValue : 100);
+        enemy2.SetHp(hpValue : 100);
+        
         character.OnTriggerEnter2D(enemy1Collider);
         character.OnTriggerEnter2D(enemy2Collider);
 
